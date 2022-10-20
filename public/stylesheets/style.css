@@ -1,0 +1,202 @@
+body {
+  font-family: Montserrat;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.5);
+  height: 68px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 27px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+ 
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFCCEB;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,19%);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Come explore the imagination */
+.text1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 100px;
+  font-family: Michella Garden;
+}
+
+.center {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-47%, -50%);
+}
+
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardBorder {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-right{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 32px;
+}
+
+/* upload */
+.upload{
+  margin-left: 400px;
+}
+
+/* custom select */
+.custom_select{
+  background: #FFCCEB;
+  padding: 10px;
+  border: none;
+  width: 20%;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* file */
+.file{
+  background-color: #FFCCEB;
+  padding: 10px;
+  border: none;
+  width: 25%;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+textarea{
+  resize: none;
+}
+
+.text{
+  background: #FFCCEB;
+  padding: 10px;
+  border: none;
+  width: 20%;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 58px;
+}
+
+.describe{
+  background: #FFCCEB;
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* button */
+.upload-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 14px 40px;
+    margin-left: 500px; 
+}
+
+.background-image{
+  background-image: url('/photos/inksplatterO.png');
+  background-repeat: no repeat;
+  background-size: 100% 100%;  
+}
+  
+/* footer */
+.footer{
+  background-color: #905E96;
+  height: 68px;
+}
+
+.footer p{
+  text-align: center; 
+  color: white; 
+  font-family: Montserrat; 
+  font-weight: bold;
+  padding-top: 25px;
+}

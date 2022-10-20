@@ -1,0 +1,35 @@
+<%- include admin_navbar.ejs %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <section class="background-image">
+    <h1 style="font-family:Michella Garden; text-align: center; font-size: 48px;">Upload</h1>
+    <div class="upload">
+    <form method="post" action="/upload">
+    <label style="font-weight: bold;">Categories:</label>
+    <select name="categories" class="custom_select">
+        <option>Fanarts</option>
+        <option>Dogs</option>
+        <option>Cartoons</option>
+    </select><br><br><br><br>
+    <!-- <b>Upload Art: </b> <input type="file" class="file">
+    <br><br><br><br> -->
+    <b>Title: </b><input type="text" class="text" name="title">
+    <br><br><br><br>
+    <b>Price: </b><input type="text" class="text" name="price">
+    <br><br><br><br>
+    <b>Description: </b><textarea rows="4" cols="50" class="describe" name="description"></textarea>
+    <button class="upload-button" type="submit">Upload</button>
+    </form>
+</div>
+<br><br><br>
+
+</section>
+</body>
+</html>
