@@ -1,0 +1,15 @@
+<%- include navbar.ejs %>
+<h1 style="font-family:Michella Garden; text-align: center; font-size: 48px;">Fanarts</h1>
+<% categories.forEach((category, index) => { %>
+    <a href="/describe/<%= category._id %>">
+  <div class="card-right">
+  <div class="card">
+      <img src="/images/<%= category.image %>" style="width:100%">
+      <div class="container">
+    </a>
+        <h4><b><%= category.title %></b></h4> 
+        <h1><%= category.price %></h1> 
+      </div>
+    </div>
+  </div>
+  <% } )%>

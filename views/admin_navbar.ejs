@@ -14,8 +14,18 @@
 <body>
   <div class="navbar">
     <img src="/photos/logo.png" width="69px" height="57px" style="margin-top: 8px; margin-left: 10px">
-    <a href="#home"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upload</a>
-    <a href="#home"><i class="fa fa-user" aria-hidden="true"></i> My arts</a> 
+    <a href="/admin_upload"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upload</a>
+    <div class="dropdown">
+      <button class="dropbtn">Categories 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/fanart_admin">Fanarts</a>
+        <a href="/dogs_admin">Dogs</a>
+        <a href="/TVshows_admin">TV Shows</a>
+      </div>
+    </div>
+    <a href="/admin_art"><i class="fa fa-user" aria-hidden="true"></i> My arts</a> 
   </div>
 </body>
 </html>

@@ -4,9 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
-const multer = require('multer');
 
-const ImageModel = require("../models/art.js");
+
+
+
+// const ImageModel = require("./models/art.js");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -35,11 +37,31 @@ mongoose.connect('mongodb://localhost/artDB')
   .then(() => console.log('connected to db'))
   .catch((e) => console.log('error',e));
 
-//storage
-const Storage = multer.diskStorage({
-  destination: 'uploads',
-})
 
+
+// app.get("/", (req, res) => {
+//   res.send("Upload file");
+// });
+
+// app.post('/upload',(req,res)=>{
+//   upload(req,res,(err)=>{
+//     if(err){
+//       console.log(err)
+//     }
+//     else{
+//       const newImage = new ImageModel({
+//         name: req.body.name,
+//         image:{
+//           data:req.file.filename,
+//           contentType: 'image/png'
+//         }
+//       }) 
+//       newImage.save()
+//       .then(()=>res.send('Succesfully uploaded'))
+//       .catch(err=>console.log(err));
+//     }
+//   })
+// })
 
 // error handler
 app.use(function(err, req, res, next) {

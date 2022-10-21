@@ -1,0 +1,15 @@
+<%- include admin_navbar.ejs %>
+    <h1 style="font-family:Michella Garden; text-align: center; font-size: 48px;">My arts</h1>
+    <% myarts.forEach((arts, index) => { %>
+      <a href="/describe_admin/<%= arts._id %>">
+    <div class="card-right">
+    <div class="card">
+        <img src="/images/<%= arts.image %>" style="width:100%">
+        <div class="container">
+        </a>
+          <h4><b><%= arts.title %></b></h4> 
+          <h1><%= arts.price %></h1> 
+        </div>
+      </div>
+    </div>
+    <% } )%>

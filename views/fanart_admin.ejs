@@ -1,7 +1,7 @@
-<%- include navbar.ejs %>
+<%- include admin_navbar.ejs %>
 <h1 style="font-family:Michella Garden; text-align: center; font-size: 48px;">Fanarts</h1>
     <% categories.forEach((category, index) => { %>
-      <a href="/describe/<%= category._id %>">
+      <a href="/describe_admin/<%= category._id %>">
       <div class="card-right">
       <div class="card">
           <img src="/images/<%= category.image %>" style="width:100%">

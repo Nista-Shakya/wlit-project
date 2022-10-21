@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 
 const artSchema = new Schema({
   categories: String,
-  // image: {
-  //   data: Buffer,
-  //   contentType: String
-  // },
+  image: {
+    // data: Buffer,
+    type: String
+  },
   title: {
     type: String,
     required: true
