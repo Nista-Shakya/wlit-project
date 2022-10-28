@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "html.autoCreateQuotes": false,
+    "javascript.preferences.jsxAttributeCompletionStyle": "none",
+    "html.suggest.html5": true,
+    "html.autoClosingTags": false,
+    "html.format.wrapAttributes": "preserve"
+}

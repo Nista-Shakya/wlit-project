@@ -18,26 +18,35 @@
     />
   </head>
   <body>
-    <div class="navbar">
-      <img
-        src="/photos/logo.png"
-        width="69px"
-        height="57px"
-        style="margin-top: 8px; margin-left: 10px"
-      />
-      <a href="/admin_upload">Upload</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Categories
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="/fanart_admin">Fanarts</a>
-          <a href="/dogs_admin">Dogs</a>
-          <a href="/TVshows_admin">TV Shows</a>
+    <div class="container" style="display: flex; flex-direction: column">
+      <div class="navbar">
+        <img
+          src="/photos/logo.png"
+          width="69px"
+          height="57px"
+          style="margin-top: 8px; margin-left: 10px"
+        />
+        <a href="#home"
+          ><i class="fa fa-user" aria-hidden="true"></i> Login/Signup</a
+        >
+        <a href="#home"
+          ><i class="fa fa-shopping-cart" aria-hidden="true"></i> My cart</a
+        >
+        <a href="#home">About</a>
+        <a href="#home">Custom Order</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/fanarts">Fanarts</a>
+            <a href="/dogs">Dogs</a>
+            <a href="/TVshows">TV Shows</a>
+          </div>
         </div>
+        <a href="/home">Home</a>
       </div>
-      <a href="/admin_art">My arts</a>
     </div>
   </body>
 </html>
